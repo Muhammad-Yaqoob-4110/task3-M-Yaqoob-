@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>University Student Registration</title>
+    <style>
+      body {
+        background-color: #f2f2f2;
+        font-family: Arial, sans-serif;
+      }
+
+      #header {
+        background-color: #0047b3;
+        text-align: center;
+        padding: 10px;
+      }
+
+      #header h1 {
+        color: white;
+      }
+
+      #form-container {
+        background-color: #0047b3;
+        color: white;
+        padding: 20px;
+        margin: 20px auto;
+        max-width: 400px;
+      }
+
+      #form-container input[type="text"],
+      #form-container input[type="number"],
+      #form-container select,
+      #form-container textarea {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 10px;
+        border-radius: 4px;
+        border: none;
+      }
+
+      #form-container input[type="submit"] {
+        background-color: #0080ff;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+      }
+
+      #form-container input[type="submit"]:hover {
+        background-color: #0066cc;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="header">
+      <img src="" alt="University Logo" />
+      <h1>University Name</h1>
+    </div>
+
+    <div id="form-container">
+      <form>
+        <label for="student-name">Student Name:</label>
+        <input type="text" id="student-name" name="student-name" required />
+
+        <label for="father-name">Father Name:</label>
+        <input type="text" id="father-name" name="father-name" required />
+
+        <label for="cnic">CNIC:</label>
+        <input type="text" id="cnic" name="cnic" required />
+
+        <label for="contact-number">Contact Number:</label>
+        <input type="text" id="contact-number" name="contact-number" required />
+
+        <label for="fsc-marks">FSC Marks:</label>
+        <input type="number" id="fsc-marks" name="fsc-marks" required />
+
+        <label for="entry-test-marks">Entry Test Marks:</label>
+        <input
+          type="number"
+          id="entry-test-marks"
+          name="entry-test-marks"
+          required
+        />
+
+        <label for="gender">Gender:</label>
+        <select id="gender" name="gender" required>
+          <option value="male">Male</option>
+          <option value="female">Female</option>
+        </select>
+
+        <label for="remarks">Student Remarks:</label>
+        <textarea id="remarks" name="remarks"></textarea>
+
+        <label for="preferences">Student Preferences:</label>
+        <textarea id="preferences" name="preferences"></textarea>
+
+        <input type="submit" value="Submit" />
+      </form>
+    </div>
+  </body>
+</html>
